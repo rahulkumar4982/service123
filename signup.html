@@ -1,0 +1,16 @@
+
+<body>
+    {% extends "master.html" %}
+    {% block title %}
+    Sign up
+    {% endblock %}
+    {% block content %}
+    <form method="post" action={% url 'signup' %}  >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <!-- a href="profile.html" -->
+             <button type="submit">signup</button>
+        <!-- /a -->
+    </form>
+</body>
+{% endblock %}
