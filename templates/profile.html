@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        
+        {% block title %}
+        Details about {{user.Full_name}}
+        {% endblock %}
+
+        {% block content %}
+        <div class="mycard">
+            <h1>{{ user.Full_name }}</h1>
+            <p>Email.id :{{ user.Email_id }}</p>
+            <p>username : {{ user.username }}</p>
+        </div>
+        {% endblock %}
+        <div><a href={% url 'logout' %}>Logout</a></div>
+        <p>
+
+        </p>
+        <div><a href={% url 'edit_profile' %}>Edit Profile</a></div>
+
+    </body>
+</html>
