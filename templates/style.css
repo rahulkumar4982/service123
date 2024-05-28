@@ -1,0 +1,23 @@
+.nav-bar {
+    height: 70px;
+    background: rgb(231, 226, 226);
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 1px 2px #eee;
+}
+
+/* hero */
+.hero {
+    height: 800px;
+    width: 100%;
+    background-image: url(hero.jpg);
+    background-size: cover;
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: center; */
+}
+
+
+
